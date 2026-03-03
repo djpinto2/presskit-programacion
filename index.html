@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Presskit — Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" crossorigin src="./assets/main-bTCQNpyu.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/main-BwRkulRr.css">
+  </head>
+  <body>
+
+    <!-- ══════════════════════════════════════════════
+         INTRO OVERLAY
+    ══════════════════════════════════════════════ -->
+    <div id="intro" class="intro">
+      <!-- video background -->
+      <video
+        id="intro-video"
+        class="intro-video"
+        src="./videos/12352337-hd_1920_1080_60fps.mp4"
+        autoplay muted loop playsinline
+      ></video>
+
+      <!-- dark navy gradient veil over video -->
+      <div class="intro-veil"></div>
+
+      <!-- horizontal rule + number centered on it -->
+      <div class="intro-center">
+        <div class="intro-line-wrap">
+          <span class="intro-line-seg left"></span>
+          <div class="intro-number-wrap">
+            <span id="countdown-num" class="countdown-num">100</span><span class="countdown-pct">%</span>
+          </div>
+          <span class="intro-line-seg right"></span>
+        </div>
+
+        <!-- ENTER — shown when countdown finishes -->
+        <div id="enter-wrap" class="enter-wrap hidden">
+          <button id="enter-btn" class="enter-btn">ENTER</button>
+        </div>
+      </div>
+
+      <!-- scanlines -->
+      <div class="scanlines"></div>
+    </div>
+
+    <!-- ══════════════════════════════════════════════
+         PRESSKIT PAGE
+    ══════════════════════════════════════════════ -->
+    <div id="presskit" class="presskit hidden">
+
+      <!-- NAV ────────────────────── -->
+      <nav class="nav">
+        <span class="nav-logo"><span class="accent">{</span>PK<span class="accent">}</span></span>
+        <ul class="nav-links">
+          <li><a href="#hero">Inicio</a></li>
+          <li><a href="#about">Sobre mí</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Proyectos</a></li>
+          <li><a href="#contact">Contacto</a></li>
+        </ul>
+        <button class="nav-menu-btn" id="menu-btn" aria-label="Menu">☰</button>
+      </nav>
+
+      <!-- HERO ────────────────────── -->
+      <section id="hero" class="hero section-full">
+        <div class="hero-content">
+          <!-- photo blob -->
+          <div class="hero-photo-wrap reveal">
+            <div class="hero-blob">
+              <img
+                src="./imagenes/IMG_3630.jpg"
+                alt="Developer photo"
+                class="hero-photo"
+              />
+            </div>
+          </div>
+
+          <!-- text side -->
+          <div class="hero-text">
+            <p class="hero-greeting reveal">👋 Hola, soy</p>
+            <h1 class="hero-name reveal">Tu Nombre</h1>
+            <p class="hero-role accent reveal">Desarrollador Full-Stack</p>
+
+            <div class="hero-btns reveal">
+              <a href="#contact" class="btn-primary">Contacto</a>
+            </div>
+
+            <p class="hero-location reveal">
+              📍 Buenos Aires, Argentina 🇦🇷
+            </p>
+
+            <div class="hero-socials reveal">
+              <a href="https://github.com" target="_blank" class="social-icon" title="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+              </a>
+              <a href="https://linkedin.com" target="_blank" class="social-icon" title="LinkedIn">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- scroll indicator -->
+        <a href="#about" class="scroll-indicator">
+          <span class="scroll-oval">
+            <span class="scroll-dot"></span>
+          </span>
+          <span class="scroll-arrow">↓</span>
+        </a>
+      </section>
+
+      <!-- ABOUT ────────────────────── -->
+      <section id="about" class="section">
+        <div class="container">
+          <p class="section-eyebrow reveal">Conocé más</p>
+          <h2 class="section-title reveal">Sobre mí</h2>
+
+          <div class="about-text-wrap reveal">
+            <p class="about-body">
+              👋 ¡Hola! Soy un desarrollador apasionado por la tecnología y la creación
+              de soluciones digitales. Mi camino en programación comenzó cuando
+              escribí mis primeras líneas de código, y desde entonces me dediqué
+              completamente a explorar y crear en el mundo tech.
+            </p>
+            <p class="about-body">
+              Disfruto construir proyectos que van desde aplicaciones web interactivas
+              hasta sistemas robustos de backend. Siempre busco aprender nuevas
+              tecnologías y aplicarlas para resolver problemas reales con impacto.
+            </p>
+          </div>
+
+          <div class="about-cards reveal">
+            <div class="info-card">
+              <span class="card-icon">🎓</span>
+              <h3 class="card-label accent">Educación</h3>
+              <p class="card-value">Ingeniería en Sistemas</p>
+              <p class="card-sub">Universidad Nacional</p>
+            </div>
+            <div class="info-card">
+              <span class="card-icon">💼</span>
+              <h3 class="card-label accent">Orientación</h3>
+              <p class="card-value">Full-Stack Developer</p>
+            </div>
+            <div class="info-card">
+              <span class="card-icon">📍</span>
+              <h3 class="card-label accent">Ubicación</h3>
+              <p class="card-value">Buenos Aires, Argentina</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SKILLS ────────────────────── -->
+      <section id="skills" class="section">
+        <div class="container">
+          <p class="section-eyebrow reveal">Lo que sé hacer</p>
+          <h2 class="section-title reveal">Skills</h2>
+
+          <div class="skills-grid reveal">
+            <div class="skill-col">
+              <h3 class="skill-cat accent">Frontend</h3>
+              <div class="skill-bars">
+                <div class="skill-row" data-level="90">
+                  <div class="skill-label-row">
+                    <span>HTML / CSS</span><span class="skill-pct">90%</span>
+                  </div>
+                  <div class="skill-track"><div class="skill-fill"></div></div>
+                </div>
+                <div class="skill-row" data-level="85">
+                  <div class="skill-label-row">
+                    <span>JavaScript</span><span class="skill-pct">85%</span>
+                  </div>
+                  <div class="skill-track"><div class="skill-fill"></div></div>
+                </div>
+                <div class="skill-row" data-level="78">
+                  <div class="skill-label-row">
+                    <span>React / Vue</span><span class="skill-pct">78%</span>
+                  </div>
+                  <div class="skill-track"><div class="skill-fill"></div></div>
+                </div>
+                <div class="skill-row" data-level="72">
+                  <div class="skill-label-row">
+                    <span>TypeScript</span><span class="skill-pct">72%</span>
+                  </div>
+                  <div class="skill-track"><div class="skill-fill"></div></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="skill-col">
+              <h3 class="skill-cat accent">Backend</h3>
+              <div class="skill-bars">
+                <div class="skill-row" data-level="80">
+                  <div class="skill-label-row">
+                    <span>Node.js</span><span class="skill-pct">80%</span>
+                  </div>
+                  <div class="skill-track"><div class="skill-fill"></div></div>
+                </div>
+                <div class="skill-row" data-level="75">
+                  <div class="skill-label-row">
+                    <span>Python</span><span class="skill-pct">75%</span>
+                  </div>
+                  <div class="skill-track"><div class="skill-fill"></div></div>
+                </div>
+                <div class="skill-row" data-level="68">
+                  <div class="skill-label-row">
+                    <span>SQL / MongoDB</span><span class="skill-pct">68%</span>
+                  </div>
+                  <div class="skill-track"><div class="skill-fill"></div></div>
+                </div>
+                <div class="skill-row" data-level="65">
+                  <div class="skill-label-row">
+                    <span>REST APIs</span><span class="skill-pct">65%</span>
+                  </div>
+                  <div class="skill-track"><div class="skill-fill"></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tools-wrap reveal">
+            <h3 class="skill-cat accent">Herramientas</h3>
+            <div class="tools-pills">
+              <span class="pill">Git</span>
+              <span class="pill">Docker</span>
+              <span class="pill">Vite</span>
+              <span class="pill">Figma</span>
+              <span class="pill">Linux</span>
+              <span class="pill">VS Code</span>
+              <span class="pill">Postman</span>
+              <span class="pill">GitHub Actions</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS ────────────────────── -->
+      <section id="projects" class="section">
+        <div class="container">
+          <p class="section-eyebrow reveal">Lo que construí</p>
+          <h2 class="section-title reveal">Proyectos</h2>
+
+          <div class="projects-grid">
+
+            <article class="project-card reveal">
+              <div class="proj-header">
+                <span class="proj-num accent">01</span>
+                <div class="proj-links">
+                  <a href="#" title="GitHub" class="proj-icon-link">
+                    <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                  </a>
+                  <a href="#" title="Live" class="proj-icon-link accent">↗</a>
+                </div>
+              </div>
+              <h3 class="proj-title">Presskit Portfolio</h3>
+              <p class="proj-desc">Sitio web de presentación personal con intro animada, video de fondo y diseño dark navy.</p>
+              <div class="proj-stack">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Vite</span>
+              </div>
+            </article>
+
+            <article class="project-card reveal">
+              <div class="proj-header">
+                <span class="proj-num accent">02</span>
+                <div class="proj-links">
+                  <a href="#" title="GitHub" class="proj-icon-link">
+                    <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                  </a>
+                  <a href="#" title="Live" class="proj-icon-link accent">↗</a>
+                </div>
+              </div>
+              <h3 class="proj-title">Web App Full-Stack</h3>
+              <p class="proj-desc">Aplicación web con autenticación JWT, base de datos y API REST propia.</p>
+              <div class="proj-stack">
+                <span>Node.js</span><span>React</span><span>MongoDB</span>
+              </div>
+            </article>
+
+            <article class="project-card reveal">
+              <div class="proj-header">
+                <span class="proj-num accent">03</span>
+                <div class="proj-links">
+                  <a href="#" title="GitHub" class="proj-icon-link">
+                    <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                  </a>
+                </div>
+              </div>
+              <h3 class="proj-title">Automatización & Scripts</h3>
+              <p class="proj-desc">Scripts de automatización y herramientas CLI para optimizar flujos de trabajo.</p>
+              <div class="proj-stack">
+                <span>Python</span><span>Bash</span><span>Node.js</span>
+              </div>
+            </article>
+
+            <article class="project-card reveal">
+              <div class="proj-header">
+                <span class="proj-num accent">04</span>
+                <div class="proj-links">
+                  <a href="#" title="GitHub" class="proj-icon-link">
+                    <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                  </a>
+                  <a href="#" title="Live" class="proj-icon-link accent">↗</a>
+                </div>
+              </div>
+              <h3 class="proj-title">Dashboard Analytics</h3>
+              <p class="proj-desc">Panel de control con visualización de datos en tiempo real y filtros dinámicos.</p>
+              <div class="proj-stack">
+                <span>Vue</span><span>D3.js</span><span>Python</span>
+              </div>
+            </article>
+
+            <article class="project-card reveal">
+              <div class="proj-header">
+                <span class="proj-num accent">05</span>
+                <div class="proj-links">
+                  <a href="#" title="GitHub" class="proj-icon-link">
+                    <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                  </a>
+                </div>
+              </div>
+              <h3 class="proj-title">API Gateway</h3>
+              <p class="proj-desc">Servicio intermediario para integración de APIs con caching y rate limiting.</p>
+              <div class="proj-stack">
+                <span>Node.js</span><span>Redis</span><span>Docker</span>
+              </div>
+            </article>
+
+            <article class="project-card reveal">
+              <div class="proj-header">
+                <span class="proj-num accent">06</span>
+                <div class="proj-links">
+                  <a href="#" title="GitHub" class="proj-icon-link">
+                    <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                  </a>
+                  <a href="#" title="Live" class="proj-icon-link accent">↗</a>
+                </div>
+              </div>
+              <h3 class="proj-title">UI Component Library</h3>
+              <p class="proj-desc">Librería de componentes reutilizables con sistema de diseño y documentación.</p>
+              <div class="proj-stack">
+                <span>React</span><span>CSS</span><span>Storybook</span>
+              </div>
+            </article>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT ────────────────────── -->
+      <section id="contact" class="section section-last">
+        <div class="container container-narrow">
+          <p class="section-eyebrow reveal">Conectemos</p>
+          <h2 class="section-title reveal">Contacto</h2>
+
+          <div class="contact-block reveal">
+            <p class="contact-sub">
+              ¿Tenés un proyecto o querés colaborar? Escribime y hablamos.
+            </p>
+            <a href="mailto:tu@email.com" class="contact-email accent">
+              tu@email.com
+            </a>
+
+            <div class="contact-socials">
+              <a href="https://github.com" target="_blank" class="social-btn">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                GitHub
+              </a>
+              <a href="https://linkedin.com" target="_blank" class="social-btn">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                LinkedIn
+              </a>
+              <a href="https://twitter.com" target="_blank" class="social-btn">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.736l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                Twitter
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FOOTER ────────────────────── -->
+      <footer class="footer">
+        <p>© 2026 — Hecho con <span class="accent">♥</span> &amp; mucho código</p>
+      </footer>
+
+    </div><!-- /presskit -->
+
+  </body>
+</html>
